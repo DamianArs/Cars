@@ -1,0 +1,54 @@
+<app-header>
+  <p level>{{car.model}}</p>
+</app-header>
+<p class='data-header'>Edytuj {{car.model}}</p>
+<div class="data-container">
+ <form [formGroup]="carForms">
+   <div class="row form-group">
+     <div class="col-sm-4">
+     <label for="model">Model</label>
+     <input formControlName="model" type="text" class="form-control" id="model" name="model" placeholder="Marka">
+     <p *ngIf="!carForms.get('model').valid && carForms.get('model').dirty"  class='error'>To pole jest wymagane</p>
+    </div>
+     <div class="col-sm-4">
+     <label for="plate">Numer rejestracyjny</label>
+     <input formControlName="plate" type="text" class="form-control" id="plate" name="plate" placeholder="Numer rejestracyjny">
+     <p *ngIf="!carForms.get('plate').valid && carForms.get('plate').dirty" class='error'>To pole jest wymagane</p>
+    </div>
+     <div class="col-sm-4">
+     <label for="date">Data produkcji</label>
+     <input formControlName="productionDate" type="text" class="form-control" id="date" name="date" placeholder="Data produkcji">
+     <p *ngIf="!carForms.get('productionDate').valid && carForms.get('productionDate').dirty" class='error'>To pole jest wymagane</p>
+    </div>
+   </div>
+   <div class="row form-group">
+     <div class="col-sm-4">
+     <label for="name">Imię</label>
+     <input formControlName="firstName" type="text" class="form-control" id="name" name="name" placeholder="Imię">
+     <p *ngIf="!carForms.get('firstName').valid && carForms.get('firstName').dirty" class='error'>To pole jest wymagane</p>
+    </div>
+     <div class="col-sm-4">
+     <label for="surname">Nazwisko</label>
+     <input formControlName="surname" type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko">
+     <p *ngIf="!carForms.get('surname').valid && carForms.get('surname').dirty" class='error'>To pole jest wymagane</p>
+    </div>
+     <div class="col-sm-4">
+     <label for="cost">Cena</label>
+     <input formControlName="cost" type="number" class="form-control" id="cost" name="cost" placeholder="Cena">
+     <p *ngIf="!carForms.get('cost').valid && carForms.get('cost').valid" class='error'>To pole jest wymagane</p>
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-12">
+        <label for="damage">Sprawny
+        <input formControlName="damage" type="checkbox" name="damage" id="damage">
+      </label>
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-12">
+       <button (click)="updateCar()"  [disabled]='carForms.invalid' type="submit" class="btn btn-secondary float-right">Zapisz</button>
+     </div>
+   </div>
+  </form>
+</div>

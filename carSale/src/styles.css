@@ -1,0 +1,72 @@
+body{
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.table{
+  background-color: #fff;
+  border: 1px solid black;
+}
+.row{
+  justify-content: center;
+}
+.table th{
+  text-transform: uppercase;
+  color: #1a3162;
+}
+.table td{
+  color: #1a3162;
+}
+.damaged{
+  border-left: 10px solid red;
+}
+.info{
+  color: #fff;
+  background-color: #777;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header{
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.level{
+  font-size: 24px;
+  font-weight: 700;
+  color:#777;
+  text-transform: uppercase;
+}
+#content-wrapper{
+  background: #333;
+  margin: 0 0 0 180px;
+  min-height: 100%;
+  padding: 10px;
+}
+.row-car{
+  cursor: pointer;
+}
+.data-header{
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 22px;
+}
+.data-container{
+  padding: 15px;
+  background-color: #fff;
+  margin: 22px;
+}
+.error{
+  background-color: red;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+}
+.remove{
+  transition: .5s;
+}
+.remove:hover{
+ color: #f00;
+}

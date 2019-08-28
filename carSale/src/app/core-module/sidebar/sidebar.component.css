@@ -1,0 +1,33 @@
+.sidebar{
+  width: 180px;
+  background-color: #999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.logo{
+  margin: 30px auto;
+  width: 120px;
+  display: block;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+li{
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+li:hover{
+  background-color: #777;
+  transition: .4s;
+}
+li.active{
+  background-color: #222;
+
+}

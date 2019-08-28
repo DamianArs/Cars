@@ -1,0 +1,64 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "model": "Renault Laguna",
+      "plate": "KXK 2433",
+      "productionDate": 1996,
+      "firstName": "Jan",
+      "surname": "Kowalski",
+      "cost": 1500,
+      "damage": true
+    },
+    {
+      "id": 2,
+      "model": "Deawoo Lanos",
+      "plate": "SK 23434",
+      "productionDate": 1999,
+      "firstName": "Tadeusz",
+      "surname": "Nowak",
+      "cost": 999,
+      "damage": false
+    },
+    {
+      "id": 3,
+      "model": "Opel Zafira",
+      "plate": "SBL 23441",
+      "productionDate": 2007,
+      "firstName": "Marcin",
+      "surname": "Jankowski",
+      "cost": 2400,
+      "damage": true
+    },
+    {
+      "model": "Skoda Octavia",
+      "plate": "SBL23456",
+      "productionDate": 2010,
+      "firstName": "Marek",
+      "surname": "Rogalski",
+      "cost": 28000,
+      "damage": true,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "model": "Seat Cordoba",
+      "plate": "SK123434",
+      "productionDate": 2009,
+      "firstName": "Leszek",
+      "surname": "Paprocki",
+      "cost": 21000,
+      "damage": false
+    },
+    {
+      "model": "Ford Focus",
+      "plate": "SBL23441",
+      "productionDate": 2007,
+      "firstName": "Mateusz",
+      "surname": "Bankowski",
+      "cost": 1750,
+      "damage": true,
+      "id": 6
+    }
+  ]
+}
